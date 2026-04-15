@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilies Sebaa | Video Editor & AI Content Creator</title>
+    <meta name="description" content="I create cinematic videos that make brands stand out and sell.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Overlay (Cinematic Intro) -->
+    <div id="loader" class="loader">
+        <div class="loader-logo">IS<span>.</span></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">IS<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#showreel">Showreel</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="https://www.instagram.com/ilies_s20/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#contact" class="btn btn-outline nav-btn">Let's Talk</a>
+            <!-- Mobile Menu Toggle -->
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#showreel">Showreel</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://www.instagram.com/ilies_s20/" target="_blank">Instagram <i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-video-wrapper">
+            <!-- Fallback image or cinematic stock video -->
+            <video autoplay loop muted playsinline class="bg-video">
+                <!-- Using a high quality placeholder generic cinematic video from Pexels (via standard CC0 links) or a fallback styling -->
+                <source src="https://videos.pexels.com/video-files/3163534/3163534-uhd_3840_2160_30fps.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <div class="hero-content reveal fade-up">
+            <p class="subtitle">Video Editor & AI Visual Creator</p>
+            <h1 class="title">Ilies Sebaa</h1>
+            <p class="tagline">I create cinematic videos that make brands<br>stand out and sell.</p>
+            <div class="hero-btns">
+                <a href="#showreel" class="btn btn-primary">Watch My Work <i class="fas fa-play"></i></a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Showreel Section -->
+    <section id="showreel" class="section">
+        <div class="container">
+            <div class="section-header reveal fade-up">
+                <h2>Showreel</h2>
+                <div class="line"></div>
+                <p class="section-subtitle">A glimpse into my latest cinematic cuts.</p>
+            </div>
+            
+            <div class="showreel-container reveal scale-up">
+                <div class="video-player-wrapper glass-effect" id="showreel-wrapper">
+                    <video id="showreel-video" class="showreel-video" poster="https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=2000&auto=format&fit=crop" autoplay loop muted playsinline>
+                        <source src="profollio.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section bg-darker">
+        <div class="container">
+            <div class="section-header reveal fade-up">
+                <h2>Selected Work</h2>
+                <div class="line"></div>
+                <p class="section-subtitle">A collection of cinematic cuts and AI-generated concepts.</p>
+            </div>
+            
+            <div class="text-center reveal fade-up" style="margin-top: 2rem;">
+                <a href="https://drive.google.com/drive/u/1/folders/1D9qEUoPcz6UBsboDQsSqTFIVzSgm0jax" target="_blank" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.2rem 3rem;">
+                    <i class="fab fa-google-drive" style="margin-right: 15px;"></i> View My Full Portfolio on Google Drive
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header text-center reveal fade-up">
+                <h2>My Expertise</h2>
+                <div class="line mx-auto"></div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card reveal fade-up">
+                    <div class="icon"><i class="fas fa-film"></i></div>
+                    <h3>Video Editing</h3>
+                    <p>High-end cinematic cuts, pacing, and color grading to tell a compelling story.</p>
+                </div>
+                
+                <div class="service-card reveal fade-up d-1">
+                    <div class="icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI-Generated Ads</h3>
+                    <p>Utilizing the latest AI tools to create mind-bending, cost-effective visual concepts.</p>
+                </div>
+                
+                <div class="service-card reveal fade-up d-2">
+                    <div class="icon"><i class="fas fa-box-open"></i></div>
+                    <h3>Product & Brand Videos</h3>
+                    <p>Dynamic commercial edits designed to elevate brand perception and drive sales.</p>
+                </div>
+                
+                <div class="service-card reveal fade-up d-3">
+                    <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Social Media Content</h3>
+                    <p>Optimized, fast-paced Reels and TikToks built for engagement and retention.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-darker">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image-wrapper reveal fade-right">
+                    <img src="profile.jpg" alt="Ilies Sebaa" class="about-img">
+                    <div class="image-accent"></div>
+                </div>
+                
+                <div class="about-text reveal fade-left">
+                    <h2>Behind the Lens</h2>
+                    <div class="line"></div>
+                    <p class="bio">
+                        I'm a video editor specialized in cinematic and AI-generated content for brands, restaurants, and coffee shops. 
+                    </p>
+                    <p class="bio highlight">
+                        I turn ideas into high-converting visuals.
+                    </p>
+                    <p class="bio">
+                        With an eye for detail and a passion for storytelling, I bring a premium, agency-level look to every project. Whether it's a short-form reel that needs to hook attention immediately or a brand film that requires emotion and atmosphere, I know how to craft the perfect edit.
+                    </p>
+                    
+                    <div class="ig-promo mt-4">
+                        <a href="https://www.instagram.com/ilies_s20/" target="_blank" class="btn btn-primary d-inline-flex align-items-center">
+                            <i class="fab fa-instagram mr-2" style="font-size: 1.2rem; margin-right: 10px;"></i> View My Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container text-center">
+            <div class="section-header reveal fade-up">
+                <h2>Let's Work Together</h2>
+                <div class="line mx-auto"></div>
+                <p class="section-subtitle">Ready to elevate your brand's visuals?</p>
+            </div>
+            
+            <div class="contact-wrapper reveal fade-up" style="text-align: center; max-width: 500px; padding: 4rem 2rem;">
+                <div class="email-block" style="margin-bottom: 2.5rem;">
+                    <p class="label">Drop me a line or send a text</p>
+                    <a href="mailto:iliess.seba@gmail.com" class="email-link">iliess.seba@gmail.com</a>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center;">
+                    <a href="mailto:iliess.seba@gmail.com" class="btn btn-primary btn-block" style="max-width: 300px; margin: 0 auto;">Email Me Directly <i class="fas fa-paper-plane" style="margin-left:8px;"></i></a>
+                    <a href="https://wa.me/213776464859" target="_blank" class="btn btn-outline btn-block" style="max-width: 300px; margin: 0 auto; color: #25D366; border-color: #25D366;">WhatsApp Me <i class="fab fa-whatsapp" style="margin-left:8px; font-size: 1.2rem;"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">IS<span>.</span></div>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/ilies_s20/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/213776464859" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:iliess.seba@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; 2024 Ilies Sebaa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
