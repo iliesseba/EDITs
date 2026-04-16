@@ -1040,6 +1040,33 @@ footer {
 .d-4 { transition-delay: 0.4s; }
 
 /* =========================================
+   FLOATING BUTTONS
+========================================= */
+.floating-wa {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    z-index: 100;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-wa:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.6);
+    color: #fff;
+}
+
+/* =========================================
    RESPONSIVE
 ========================================= */
 @media (max-width: 992px) {

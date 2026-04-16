@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilies Sebaa - Resume</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #050505;
+            --secondary: #d4af37;
+            --text-dark: #333333;
+            --text-light: #555555;
+            --background: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f5f5;
+            color: var(--text-dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .resume-wrapper {
+            max-width: 21cm; /* A4 width */
+            margin: 2rem auto;
+            background: var(--background);
+            padding: 2.5cm;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .header-left h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.2rem;
+            line-height: 1.1;
+        }
+
+        .header-left h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            color: var(--primary);
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .header-right {
+            text-align: right;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .header-right a {
+            color: var(--text-dark);
+            text-decoration: none;
+        }
+
+        .header-right a:hover {
+            color: var(--secondary);
+        }
+
+        .contact-item {
+            margin-bottom: 0.2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+
+        .profile p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            text-align: justify;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.3rem;
+        }
+
+        .item-title {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 1.05rem;
+        }
+
+        .item-date {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-light);
+        }
+
+        .item-subtitle {
+            font-weight: 500;
+            font-style: italic;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .item-desc {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .skill-group h4 {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            color: var(--primary);
+        }
+
+        .skill-group ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+
+        .skill-group li {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+        }
+
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .print-btn:hover {
+            background-color: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .resume-wrapper {
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                max-width: 100%;
+            }
+            .print-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+
+    <div class="resume-wrapper">
+        <header>
+            <div class="header-left">
+                <h1>Ilies Sebaa</h1>
+                <h2>Video Editor & IT Specialist</h2>
+            </div>
+            <div class="header-right">
+                <div class="contact-item">iliess.seba@gmail.com</div>
+                <div class="contact-item">+213 776 464 859 (WhatsApp)</div>
+                <div class="contact-item"><a href="https://www.linkedin.com/in/ilies-seba/" target="_blank">linkedin.com/in/ilies-seba</a></div>
+                <div class="contact-item"><a href="https://www.instagram.com/ilies_s20/" target="_blank">@ilies_s20</a></div>
+            </div>
+        </header>
+
+        <section class="profile">
+            <h3>Professional Summary</h3>
+            <p>I am a versatile visual content creator and IT specialist, combining creative storytelling with strong technical thinking. By utilizing a programming mindset, I produce videos that are not only visually compelling but also optimized for performance and marketing results. I approach video creation as a complete system: from rigorous conceptualization and market analysis to high-end execution and measurable impact.</p>
+        </section>
+
+        <section class="experience">
+            <h3>Professional Experience</h3>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">Graphic Design & Web3 Visuals</span>
+                    <span class="item-date">2024 – 2026</span>
+                </div>
+                <div class="item-subtitle">EarthMeta</div>
+                <p class="item-desc">Led graphic design initiatives for Web3 and Metaverse related projects. Spearheaded visual identity development for digital brands and engineered modern, tech-focused visual content designed for high-engagement platforms.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">CRM Systems & Digital Strategy</span>
+                    <span class="item-date">2023 – 2025</span>
+                </div>
+                <div class="item-subtitle">Home City</div>
+                <p class="item-desc">Managed advanced CRM systems and handled media buying alongside paid advertising campaigns. Conducted deep customer and market analysis to provide critical data support for sales and comprehensive digital marketing strategies.</p>
+            </div>
+        </section>
+
+        <section class="education">
+            <h3>Academic Background</h3>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <span class="item-title">Bachelor’s Degree in Computer Science – Information Systems</span>
+                    <span class="item-date">2024</span>
+                </div>
+                <div class="item-subtitle">University Dr. Moulay Tahar, Saïda</div>
+                <p class="item-desc">Acquired a rigorous technical background shaping an analytical mindset applied directly to video editing logic, project structuring, CRM implementations, and overarching digital production workflows.</p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h3>Expertise & Skills</h3>
+            <div class="skills-container">
+                <div class="skill-group">
+                    <h4>Video Production & Editing</h4>
+                    <ul>
+                        <li>High-end cinematic cuts & color grading</li>
+                        <li>High-end production workflow (Sony, Gimbal)</li>
+                        <li>4K Editing Pipeline</li>
+                        <li>Social Media Content (Reels/TikToks)</li>
+                        <li>Product & Brand Commercial Videos</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h4>Technical & Marketing Strategy</h4>
+                    <ul>
+                        <li>AI-Generated Visuals & Ads</li>
+                        <li>Programming mindset applied to editing precision</li>
+                        <li>Marketing-driven video creation</li>
+                        <li>CRM Systems Management</li>
+                        <li>Media Buying & Paid Advertising</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
