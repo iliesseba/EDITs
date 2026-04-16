@@ -82,3 +82,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+// 6. Copy Email Function
+window.copyEmail = function() {
+    navigator.clipboard.writeText('iliess.seba@gmail.com').then(() => {
+        const btn = document.getElementById('copyBtn');
+        const originalHtml = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-check" style="color: #25D366;"></i>';
+        setTimeout(() => {
+            btn.innerHTML = originalHtml;
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+};
